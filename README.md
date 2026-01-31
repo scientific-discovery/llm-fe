@@ -1,77 +1,29 @@
-# Academic Project Page Template
+# LLEMA: Accelerating Materials Design via LLM-Guided Evolutionary Search
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+## About
 
-A clean, responsive template for academic project pages.
+LLM-FE is a general framework that leverages large language models (LLMs) as intelligent feature engineers for tabular machine learning tasks. The method reframes feature engineering as a language-driven generation and refinement process, enabling LLMs to propose, explain, and iteratively improve high-quality features that enhance downstream predictive performance.
 
+## Key Features
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+- **LLM-Driven Feature Generation:** Uses natural language prompts to generate diverse and semantically meaningful feature transformations
+- **Model-in-the-Loop Refinement:** Iteratively improves features based on downstream model performance feedback
+- **Task-Agnostic Design:** Applicable across regression and classification tasks on structured/tabular data
+- **Explainable Features:** Produces human-interpretable feature definitions expressed in natural language
+- **Plug-and-Play Pipeline:** Integrates seamlessly with standard machine learning models and workflows
 
+## Results
 
+LLM-FE demonstrates that:
+- ✅ LLM-generated features consistently improve predictive performance over raw features
+- ✅ Performance is competitive with or superior to expert-crafted and automated feature engineering baselines
+- ✅ The framework generalizes across datasets, domains, and learning objectives
+- ✅ Generated features are interpretable, reusable, and aligned with domain semantics
 
-## Start using the template
-To start using the template click on `Use this Template`.
+## Links
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
-
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
-
-## What's New
-
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
-
-## Components
-
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
-
-## Customization
-
-The HTML file has TODO comments showing what to replace:
-
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
-
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
-
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
-
-## Tips
-
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
+- 📄 [Paper (arXiv)](https://arxiv.org/abs/2503.14434)
+- 💻 [Code (GitHub)](https://github.com/nikhilsab/LLMFE)
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
