@@ -498,6 +498,38 @@ code {
   content: "ied!";
 }
 
+/* VT Logo */
+.vt-logo-container {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+.vt-logo {
+  height: 50px;
+  width: auto;
+  transition: var(--transition);
+  filter: drop-shadow(var(--shadow-md));
+}
+
+.vt-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(var(--shadow-lg));
+}
+
+@media screen and (max-width: 768px) {
+  .vt-logo-container {
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .vt-logo {
+    height: 35px;
+  }
+}
+
 /* Header Logos */
 .header-logos {
   position: absolute;
