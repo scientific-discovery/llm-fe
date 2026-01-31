@@ -139,6 +139,9 @@
         Performance scores populate an island-based memory buffer, which is reused as in-context
         demonstrations to iteratively refine future generations.
       </p>
+      <div class="has-text-centered" style="margin-top: 2rem;">
+        <img src="static/images/main_fig.jpg" alt="LLM-FE Method Overview" style="max-width: 100%; height: auto; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+      </div>
     </div>
   </div>
 </section>
@@ -168,17 +171,62 @@
   </div>
 </section>
 
-<!-- Results -->
+<!-- Quantitative Results -->
 <section class="section hero">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Results</h2>
+    <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
     <div class="content has-text-justified">
       <p>
         Across 11 classification and 10 regression datasets, LLM-FE consistently improves performance
-        over raw features and outperforms AutoFeat, OpenFE, and prior LLM-based baselines. Ablation
-        studies confirm the importance of domain-aware prompting and evolutionary memory in driving
+        over raw features and outperforms AutoFeat, OpenFE, and prior LLM-based baselines.
+      </p>
+      <div class="columns" style="margin-top: 2rem;">
+        <div class="column is-half">
+          <div class="has-text-centered">
+            <img src="static/images/classification_results.jpg" alt="Classification Results" style="max-width: 100%; height: auto; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="has-text-centered">
+            <img src="static/images/regression_results.jpg" alt="Regression Results" style="max-width: 100%; height: auto; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Qualitative Results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+    <div class="content has-text-justified">
+      <p>
+        Ablation studies confirm the importance of domain-aware prompting and evolutionary memory in driving
         performance gains.
       </p>
+      <div class="columns is-multiline" style="margin-top: 2rem;">
+        <div class="column is-half">
+          <div class="has-text-centered">
+            <img src="static/images/ablation.jpg" alt="Ablation Study" style="max-width: 100%; height: auto; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="has-text-centered">
+            <img src="static/images/domain.jpg" alt="Domain Analysis" style="max-width: 100%; height: auto; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="has-text-centered">
+            <img src="static/images/features.jpg" alt="Feature Analysis" style="max-width: 100%; height: auto; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="has-text-centered">
+            <img src="static/images/pareto.jpg" alt="Pareto Analysis" style="max-width: 100%; height: auto; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
