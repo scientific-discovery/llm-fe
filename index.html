@@ -69,40 +69,41 @@
 
 <body>
 
-<section class="hero">
-  <!-- Logos -->
-  <div class="header-logos">
-    <div class="header-logo-left">
-      <img src="static/images/vt.png" alt="Virginia Tech" style="height: 30px; width: auto;"/>
-    </div>
-    <!-- More Works Dropdown -->
-    <div class="more-works-container">
-      <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-        <i class="fas fa-flask"></i>
-        More Works
-        <i class="fas fa-chevron-down dropdown-arrow"></i>
-      </button>
-      <div class="more-works-dropdown" id="moreWorksDropdown">
-        <div class="dropdown-header">
-          <h4>More Works from Our Lab</h4>
-          <button class="close-btn" onclick="toggleMoreWorks()">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="works-list">
-          <a href="https://scientific-discovery.github.io/llema-project" class="work-item" target="_blank">
-            <div class="work-info">
-              <h5>LLEMA: Accelerating Materials Design via LLM-Guided Evolutionary Search</h5>
-              <p>A unified framework that couples the scientific knowledge embedded in large language models with chemistry-informed evolutionary rules and memory-based refinement.</p>
-              <span class="work-venue">ICLR 2026</span>
-            </div>
-            <i class="fas fa-external-link-alt"></i>
-          </a>
+  <main id="main-content">
+  <section class="hero">
+    <!-- Logos -->
+    <div class="header-logos">
+      <div class="header-logo-left">
+        <img src="static/images/vt.png" alt="Virginia Tech" style="height: 30px; width: auto;"/>
+      </div>
+      <!-- More Works Dropdown -->
+      <div class="more-works-container">
+        <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+          <i class="fas fa-flask"></i>
+          More Works
+          <i class="fas fa-chevron-down dropdown-arrow"></i>
+        </button>
+        <div class="more-works-dropdown" id="moreWorksDropdown">
+          <div class="dropdown-header">
+            <h4>More Works from Our Lab</h4>
+            <button class="close-btn" onclick="toggleMoreWorks()">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="works-list">
+            <a href="https://scientific-discovery.github.io/llema-project" class="work-item" target="_blank">
+              <div class="work-info">
+                <h5>LLEMA: Accelerating Materials Design via LLM-Guided Evolutionary Search</h5>
+                <p>A unified framework that couples the scientific knowledge embedded in large language models with chemistry-informed evolutionary rules and memory-based refinement.</p>
+                <span class="work-venue">ICLR 2026</span>
+              </div>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="hero-body">
+    <div class="hero-body">
     <div class="container has-text-centered" style="max-width: 1200px;">
       <h1 class="title is-1 publication-title" style="line-height: 1.2;">
         LLM-FE: Automated Feature Engineering<br>with Large Language Models
@@ -143,7 +144,7 @@
       </div>
     </div>
   </div>
-</section>
+  </section>
 
 <!-- Abstract -->
 <section class="section hero is-light">
@@ -324,5 +325,6 @@
   </div>
 </footer>
 
+  </main>
 </body>
 </html>
