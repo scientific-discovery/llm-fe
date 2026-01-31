@@ -44,6 +44,34 @@ function scrollToTop() {
     });
 }
 
+// Toggle More Works dropdown menu
+function toggleMoreWorks() {
+    const dropdown = document.getElementById('moreWorksDropdown');
+    const button = document.querySelector('.more-works-btn');
+    const arrow = document.querySelector('.dropdown-arrow');
+    
+    if (dropdown) {
+        dropdown.classList.toggle('active');
+        if (arrow) {
+            arrow.style.transform = dropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+    }
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+    const container = document.querySelector('.more-works-container');
+    const dropdown = document.getElementById('moreWorksDropdown');
+    
+    if (container && dropdown && !container.contains(event.target)) {
+        dropdown.classList.remove('active');
+        const arrow = document.querySelector('.dropdown-arrow');
+        if (arrow) {
+            arrow.style.transform = 'rotate(0deg)';
+        }
+    }
+});
+
 // Show/hide scroll to top button
 window.addEventListener('scroll', function() {
     const scrollButton = document.querySelector('.scroll-to-top');
