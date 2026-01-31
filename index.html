@@ -133,11 +133,7 @@
     <h2 class="title is-3 has-text-centered">Method Overview</h2>
     <div class="content has-text-justified">
       <p>
-        LLM-FE operates in a closed-loop optimization pipeline. Given dataset metadata and task
-        objectives, the LLM proposes feature-transformation programs expressed as executable code.
-        Each program augments the dataset with new features and is evaluated using a downstream model.
-        Performance scores populate an island-based memory buffer, which is reused as in-context
-        demonstrations to iteratively refine future generations.
+        LLM-FE casts feature engineering as a program search problem. Given dataset metadata and task objectives, a large language model generates executable feature-transformation programs using structured prompts and in-context examples. Each program is executed to augment the dataset and evaluated by training a downstream model on a validation split. High-performing programs are stored in an island-based memory buffer and reused as demonstrations to guide subsequent generations. This closed-loop process enables iterative refinement, balancing exploration and exploitation while producing interpretable, reusable features.
       </p>
       <div style="margin-top: 2rem;">
         <div class="has-text-centered">
@@ -221,10 +217,10 @@
       
       <!-- First Rectangle at Top -->
       <div style="margin-top: 2rem;">
-        <h3 class="title is-4 has-text-centered" style="margin-bottom: 1rem;">Domain Analysis</h3>
+        <h3 class="title is-4 has-text-centered" style="margin-bottom: 1rem;">Impact of Domain Knowledge</h3>
         <div style="margin-bottom: 1rem; padding: 1rem; background-color: white; border-radius: var(--border-radius); box-shadow: var(--shadow-sm);">
           <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
-            Analysis of LLM-FE performance across different domain categories, demonstrating consistent improvements.
+            Integrating domain knowledge helps in generating interpretable features to improve downstream model performance.
           </p>
         </div>
         <div class="has-text-centered">
@@ -249,7 +245,7 @@
           <h3 class="title is-4 has-text-centered" style="margin-bottom: 1rem;">Computational Efficiency</h3>
           <div style="margin-bottom: 1rem; padding: 1rem; background-color: white; border-radius: var(--border-radius); box-shadow: var(--shadow-sm);">
             <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
-              Trade-off analysis between computational cost and performance improvement.
+              LLM-FE has the best trade-off between computational cost and performance improvement.
             </p>
           </div>
           <div class="has-text-centered">
@@ -263,7 +259,7 @@
         <h3 class="title is-4 has-text-centered" style="margin-bottom: 1rem;">Feature Analysis</h3>
         <div style="margin-bottom: 1rem; padding: 1rem; background-color: white; border-radius: var(--border-radius); box-shadow: var(--shadow-sm);">
           <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
-            Analysis of generated features showing their interpretability and impact on model performance.
+            LLM-FE successfully generates features using simple as well as complex transformations.
           </p>
         </div>
         <div class="has-text-centered">
