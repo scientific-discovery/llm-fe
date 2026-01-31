@@ -723,6 +723,22 @@ a:focus {
 }
 
 
+/* Qualitative Results Square Images */
+.qualitative-square-img {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+@media screen and (max-width: 768px) {
+  .qualitative-square-img {
+    max-width: 100%;
+  }
+}
+
 /* Print styles */
 @media print {
   .hero, .section {
