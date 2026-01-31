@@ -139,9 +139,11 @@
         Performance scores populate an island-based memory buffer, which is reused as in-context
         demonstrations to iteratively refine future generations.
       </p>
-      <div class="has-text-centered" style="margin-top: 2rem;">
-        <img src="static/images/main_fig.jpg" alt="LLM-FE Method Overview" style="max-width: 100%; height: auto; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
-        <p style="margin-top: 1rem; font-style: italic; color: var(--text-secondary); font-size: 0.9rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+      <div style="margin-top: 2rem;">
+        <div class="has-text-centered">
+          <img src="static/images/main_fig.jpg" alt="LLM-FE Method Overview" style="max-width: 100%; height: auto; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+        </div>
+        <p style="margin-top: 1rem; font-style: italic; color: var(--text-secondary); font-size: 0.9rem; text-align: justify; line-height: 1.5; max-width: 100%;">
           Overview of the LLM-FE Framework. For a given dataset, LLM-FE follows these steps: 
           (a) New Hypothesis Generation, where an LLM generates feature transformation hypotheses as programs; 
           (b) Feature Engineering, where the program is applied to create a modified dataset; 
@@ -184,7 +186,7 @@
     <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
     <div class="content has-text-justified">
       <p>
-        Across 11 classification and 10 regression datasets, LLM-FE consistently improves performance
+        Across 16 classification and 10 regression datasets, LLM-FE consistently improves performance
         over raw features and outperforms AutoFeat, OpenFE, and prior LLM-based baselines.
       </p>
       
@@ -220,8 +222,8 @@
       <!-- First Rectangle at Top -->
       <div style="margin-top: 2rem;">
         <h3 class="title is-4 has-text-centered" style="margin-bottom: 1rem;">Domain Analysis</h3>
-        <div class="has-text-centered" style="margin-bottom: 1rem; padding: 0 1rem;">
-          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; max-width: 900px; margin: 0 auto;">
+        <div style="margin-bottom: 1rem; padding: 1rem; background-color: white; border-radius: var(--border-radius); box-shadow: var(--shadow-sm);">
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
             Analysis of LLM-FE performance across different domain categories, demonstrating consistent improvements.
           </p>
         </div>
@@ -234,8 +236,8 @@
       <div class="columns" style="margin-top: 3rem;">
         <div class="column is-half">
           <h3 class="title is-4 has-text-centered" style="margin-bottom: 1rem;">Ablation Study</h3>
-          <div class="has-text-centered" style="margin-bottom: 1rem; padding: 0 1rem;">
-            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0 auto;">
+          <div style="margin-bottom: 1rem; padding: 1rem; background-color: white; border-radius: var(--border-radius); box-shadow: var(--shadow-sm);">
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
               Ablation study showing the contribution of each component to overall performance.
             </p>
           </div>
@@ -245,8 +247,8 @@
         </div>
         <div class="column is-half">
           <h3 class="title is-4 has-text-centered" style="margin-bottom: 1rem;">Computational Efficiency</h3>
-          <div class="has-text-centered" style="margin-bottom: 1rem; padding: 0 1rem;">
-            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0 auto;">
+          <div style="margin-bottom: 1rem; padding: 1rem; background-color: white; border-radius: var(--border-radius); box-shadow: var(--shadow-sm);">
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
               Trade-off analysis between computational cost and performance improvement.
             </p>
           </div>
@@ -259,8 +261,8 @@
       <!-- Second Rectangle at Bottom -->
       <div style="margin-top: 3rem;">
         <h3 class="title is-4 has-text-centered" style="margin-bottom: 1rem;">Feature Analysis</h3>
-        <div class="has-text-centered" style="margin-bottom: 1rem; padding: 0 1rem;">
-          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; max-width: 900px; margin: 0 auto;">
+        <div style="margin-bottom: 1rem; padding: 1rem; background-color: white; border-radius: var(--border-radius); box-shadow: var(--shadow-sm);">
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: center;">
             Analysis of generated features showing their interpretability and impact on model performance.
           </p>
         </div>
