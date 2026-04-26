@@ -520,6 +520,19 @@ code {
   gap: 1rem;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+  pointer-events: auto;
+}
+
+.header-logo-venue {
+  display: flex;
+  align-items: center;
+}
+
 /* More Works Dropdown */
 .more-works-container {
   position: relative;
@@ -527,7 +540,6 @@ code {
   pointer-events: auto;
   display: block;
   visibility: visible;
-  margin-left: auto;
 }
 
 .more-works-btn {
@@ -696,7 +708,8 @@ code {
     gap: 0.5rem;
   }
   
-  .header-logo-left img {
+  .header-logo-left img,
+  .header-logo-venue img {
     height: 30px !important;
   }
   
