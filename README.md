@@ -1,4 +1,4 @@
-# LLEMA: Accelerating Materials Design via LLM-Guided Evolutionary Search
+# LLM-FE: Automated Feature Engineering with Large Language Models
 
 ## About
 
